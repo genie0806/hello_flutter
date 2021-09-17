@@ -51,7 +51,7 @@ class AdWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(right: 20),
             child: SizedBox(
-              width: 100,
+              width: 150,
               child: Image.network(imageUrl),
             ),
           ),
