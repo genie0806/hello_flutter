@@ -35,7 +35,7 @@ class AdWidget extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
-                        fontSize: 25),
+                        fontSize: 26),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 10),
