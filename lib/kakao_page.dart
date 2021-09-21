@@ -58,7 +58,6 @@ class KakaoPage extends StatelessWidget {
               ),
               //광고자리
               AspectRatio(
-                aspectRatio: 2 / 1,
                 child: PageView(
                   controller: pageController,
                   children: _adItems
