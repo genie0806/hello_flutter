@@ -31,7 +31,22 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('위젯연습'),
       ),
-      body: Text('aaaa'),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Center(
+              child: Text('여기로 이동을 완료했습니다아~'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text('나 돌아갈래'),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
