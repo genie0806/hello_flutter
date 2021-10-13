@@ -4,7 +4,7 @@ import 'package:hello_flutter/kakao_page.dart';
 import 'package:hello_flutter/main.dart';
 
 class Tabpage extends StatefulWidget {
-  Tabpage({Key key}) : super(key: key);
+  const Tabpage({Key key}) : super(key: key);
 
   @override
   _TabpageState createState() => _TabpageState();
@@ -15,8 +15,8 @@ class _TabpageState extends State<Tabpage> {
 
   final _pages = [
     KakaoPage(),
-    HomePage(),
-    HomePage2(),
+    const HomePage(),
+    const HomePage2(),
   ];
 
   @override
@@ -24,7 +24,7 @@ class _TabpageState extends State<Tabpage> {
     return Scaffold(
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
-        items: [
+        items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: '카카오T'),
           BottomNavigationBarItem(icon: Icon(Icons.home), label: '카카오T'),
           BottomNavigationBarItem(icon: Icon(Icons.home), label: '카카오T'),
