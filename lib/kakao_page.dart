@@ -79,9 +79,11 @@ class KakaoPage extends StatelessWidget {
                     return InkWell(
                       onTap: () {
                         Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => AdDetailPage(ad: e)));
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => AdDetailPage(ad: e),
+                          ),
+                        );
                       },
                       child: AdWidget(
                         title: e.title,
